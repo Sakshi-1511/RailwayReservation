@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ass4</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 15px 30px;
+            font-size: 17px;
+            padding:8px;
+    
+        }
+   
+        .container{
+            background-color: #f2f2f2;
+            padding:5px 20px 15px 20px;
+            border: 1px solid lightgray;
+            border-radius: 4px;
+
+
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        input[type="date"],select{
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+
+        }
+        .heading{
+            text-align: center;
+           
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 400;
+
+        }
+        input[type="submit"]{
+            background-color: #4daea1;
+            color: white;
+            padding:12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;}
+            input[type="submit"]:hover{background-color: #4caf84;}
+    </style>
+</head>
+<body>
+
+<form class="container">
+    <h1 class="heading" style="background-color: rgb(9, 69, 88);
+    color: white; padding :5px"><b>RESERVATION FORM</b></h1>
+    <label>Reservation Quota :</label><br>
+    <select>
+        <option value="First class">First class</option>
+        <option value="Second class">Second class</option>
+        <option value="Third class">Third class</option>
+        <option value="Fourth class">Fourth class</option>
+    </select><br><br>
+    <label>Train Name OR Number :</label><br><input type="text"><br><br>
+    <label>Journey From :</label><br><input type="text"><br><br>
+    <label>Journey To :</label><br><input type="text"><br><br>
+    <label>Journey Date :</label><br><input type="date"><br><br>
+    <b><h2 style="background-color: rgb(9, 69, 88);
+    color: white; padding:5px; text-align: center;
+           
+           font-family: 'Times New Roman', Times, serif;
+           font-size: 400;"
+>PERSONAL DETAILS </h2></b>
+    <label>Passenger Name :</label><br><input type="text"><br><br>
+    <label>Age :</label><br><input type="number"><br><br>
+    <label>Gender :</label><br><input type="radio" value="Male" name="gender"> <label>Male</label><input type="radio" value="Female" name="gender">  <label>Female</label><input type="radio" value="Other" name="gender">  <label>Other</label><br><br>
+    <label>Phone No. :</label><br><input type="text" size="10"><br><br>
+    <label>Email :</label><br><input type="email"><br><br>
+    <input type="submit" value="Confirm Reservation">
+    </form>
+</body>
+</html>
